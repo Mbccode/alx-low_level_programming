@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * return: Returns 0 always (success)
+ * main - print the input
+ * Return: 0 if exited in a proper manner
  */
 
 int main(void)
