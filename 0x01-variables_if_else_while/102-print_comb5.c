@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Desc: Possible digits 
+ * Desc: Possible digit of numbers 
  * Return: 0
  */
 
