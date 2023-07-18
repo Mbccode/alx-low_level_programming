@@ -1,17 +1,21 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - Entry point
- * Return: 0 if the function call is correct
+ * main - prints _putchar
+ * 
+ * Return: 0 on success
  */
-
-void _putchar1(void)
-{
-	printf("_putchar\n");
-}
 
 int main(void)
 {
-	_putchar1();
-	return 0;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }
+
