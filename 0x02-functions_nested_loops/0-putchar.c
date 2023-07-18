@@ -7,7 +7,7 @@
 
 void _putchar1(void)
 {
-	printf("_putchar");
+	printf("_putchar\n");
 }
 
 int main(void)
