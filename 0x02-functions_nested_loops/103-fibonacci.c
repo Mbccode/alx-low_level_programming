@@ -6,23 +6,27 @@
  * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
-	int a = 1;
-	int b = 2;
-	int sum = 2;
+	int i;
+	unsigned long int j, k, next, sum;
 
-	while (b <= 4000000)
+	j = 1;
+	k = 2;
+	sum = 0;
+
+	for (i = 1; i <= 33; ++i)
 	{
-		int c = a + b;
-		if (c % 2 == 0)
+		if (j < 4000000 && (j % 2) == 0)
 		{
-			sum += c;
+			sum = sum + j;
 		}
-	a = b;
-	b = c;
+		next = j + k;
+		j = k;
+		k = next;
 	}
 
-	printf("Sum of even-valued terms: %d\n", sum);
-	return 0;
+	printf("%lu\n", sum);
+
+	return (0);
 }
