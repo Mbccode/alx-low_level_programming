@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_array - 
+ * print_array - Entry point
  * @a: array name
  * @n: is the number of elements of the array to be printed
  * Return: a and n
@@ -15,9 +15,9 @@ void print_array(int *a, int n)
 	{
 		printf("%d, ", a[i]);
 	}
-		if (i == (n - 1))
-		{
-			printf("%d", a[n - 1]);
-		}
+	if (i == (n - 1))
+	{
+		printf("%d", a[n - 1]);
+	}
 	printf("\n");
 }
