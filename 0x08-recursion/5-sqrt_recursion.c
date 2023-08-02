@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
 
 /**
  * ben_recursion - function helper
- * @n: integer variable 
+ * @n: integer variable
  * @i: iterator variable
  *
  * Return: the square root
