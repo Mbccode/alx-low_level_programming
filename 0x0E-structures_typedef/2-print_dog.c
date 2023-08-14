@@ -4,13 +4,12 @@
 /**
  * print_dog - Entry point
  * @d: data of dog
+ * Return: Nothing cause it's void
  */
 
 void print_dog(struct dog *d)
 {
-	if (d == NULL)
-		return;
-	
+
 	if (d)
 	{
 		if (d->name == NULL)
