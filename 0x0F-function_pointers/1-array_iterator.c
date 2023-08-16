@@ -3,15 +3,15 @@
 
 /**
  * array_iterator - Entry point
- * @array: arrays of integers
- * @action: pointer to a function
+ * @array:  Name of the array
  * @size: size of array
- * Return: Null
+ * @action: pointer to a function
+ * Return: Nothing
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	unsigned i = 0;
+	unsigned int i = 0;
 
 	if (!array || !action)
 		return;
