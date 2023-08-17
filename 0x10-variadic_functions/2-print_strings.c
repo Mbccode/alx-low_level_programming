@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(str, n);
 
-	for (count = 0, count < n, count++)
+	for (count = 0; count < n; count++)
 	{
 		wrd = va_arg(str, char *);
 
@@ -30,7 +30,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 			printf("%s", wrd);
 
-		if (count != (n - 1) && separator != NULL)
+		if (count < (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
 
