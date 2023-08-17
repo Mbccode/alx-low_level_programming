@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 
@@ -19,7 +18,7 @@ int sum_them_all(const unsigned int n, ...)
 	if (n == 0)
 		return (0);
 
-	va_start(ben, n)
+	va_start(ben, n);
 
 	for (i = 0; i < n; i++)
 		total += va_arg(ben, int);
