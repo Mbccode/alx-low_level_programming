@@ -1,11 +1,9 @@
-#include <stdarg.h>
 #include "variadic_functions.h"
-
+#include <stdarg.h>
 /**
  * sum_them_all - Sum of numbers
  * @n: integer number
- * Return: the summation of given numbers
- * on success
+ * Return: 0 on success
  */
 
 int sum_them_all(const unsigned int n, ...)
