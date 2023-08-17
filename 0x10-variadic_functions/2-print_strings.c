@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * print_strings - Entry point
- * @separator: Characters to be printed
- * @n: numbers to be printed
+ * print_strings - Prints strings, followed by a new line
+ * @separator: string to be printed between strings
+ * @n: number of strings passed to function
  * @...: A variable number of strings to be printed
  *
  * Description: if separator is null dont print
@@ -14,20 +14,25 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list string;
+	va_list str;
 	unsigned int count;
+	char *wrd;
 
-	va_start(string, n);
+	va_start(str, n);
 
 	for (count = 0, count < n, count++)
-		if (va_arg(string, char *) == NULL)
+	{
+		wrd = va_arg(str, char *);
+
+		if (wrd == NULL)
 			printf("nil");
 		else
-			printf("%s", va_arg(string, char *);
+			printf("%s", wrd);
 
 		if (count != (n - 1) && separator != NULL)
 			printf("%s", separator);
+	}
 
-	va_arg(string);
+	va_end(str);
 	printf("\n");
 }
