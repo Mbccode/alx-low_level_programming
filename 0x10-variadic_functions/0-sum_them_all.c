@@ -11,24 +11,19 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list args;
-
-	va_start(args, n);
+	va_list ben;
 
 	int total = 0;
-	int i;
+	unsigned int i;
+
+	if (n == 0)
+		return (0);
+
+	va_start(ben, n)
 
 	for (i = 0; i < n; i++)
-	{
-		if (n == 0)
-		{
-			return (0);
-		}
-		else
-		{
-			total += va_arg(args, int);
-		}
-	}
-	va_end(args);
+		total += va_arg(ben, int);
+
+	va_end(ben);
 	return (total);
 }
