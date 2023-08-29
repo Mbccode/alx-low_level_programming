@@ -1,5 +1,3 @@
-6-pop_listint.c
-
 #include "lists.h"
 
 /**
