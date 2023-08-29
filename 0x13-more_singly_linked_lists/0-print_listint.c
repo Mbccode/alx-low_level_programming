@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * print_listint - Entry point
+ * print_listint - Entry point for printing nodes
  * @h: linked list of type listint_t to print
  *
- * Return: number of nodes
+ * Return: count on success.
  */
 
 size_t print_listint(const listint_t *h)
